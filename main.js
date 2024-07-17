@@ -33,6 +33,7 @@ function decrypt() {
 	const plaintext = CryptoJS.AES.decrypt(encrypted, encryptionKey, {iv: iv}).toString(CryptoJS.enc.Utf8);
 	document.getElementById('plaintext').value = plaintext;
 	document.getElementById('iterations').value = iterations;
+	document.getElementById('iterations-display').textContent = iterations;
 }
 
 function copy(btn, id) {
@@ -43,3 +44,10 @@ function copy(btn, id) {
 		}, '1000');
 	});
 }
+
+function setIterations() {
+	const iterations = document.getElementById('iterations').value;
+	document.getElementById('iterations-display').textContent = iterations;
+}
+
+setIterations();
