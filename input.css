@@ -3,8 +3,5 @@
 @tailwind utilities;
 
 ::selection {
-	background-color: #3b83f670;
-}
-input:focus-visible, textarea:focus-visible, button:focus-visible {
-	outline: solid 1px #3b82f6;
+	background-color: rgba(59, 130, 246, 0.5);
 }
