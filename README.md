@@ -1,1 +1,1 @@
-# text-encryptor-web
+# TextCrypt
