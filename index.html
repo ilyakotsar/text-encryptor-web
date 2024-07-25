@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="author" content="Ilya Kotsar">
-	<title>Text Encryptor Web</title>
+	<title>TextCrypt</title>
+	<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/57188064?v=4">
 	<link rel="stylesheet" href="/textcrypt/main.min.css">
 </head>
 <body class="text-white bg-zinc-950">
@@ -22,7 +23,7 @@
 			<div class="mb-0.5">
 				<label for="iterations" class="cursor-pointer">Iterations: <span id="iterations-display"></span></label>
 			</div>
-			<input type="range" oninput="setIterations()" id="iterations" class="w-full cursor-pointer outline-none" min="100000" max="1000000" value="350000" step="10000" autocomplete="off">
+			<input type="range" oninput="setIterations()" id="iterations" class="w-full cursor-pointer outline-none" min="100000" max="1000000" value="350000" step="10000">
 		</div>
 		<div class="border-y border-zinc-900 py-5 mb-5">
 			<div class="mb-5">
